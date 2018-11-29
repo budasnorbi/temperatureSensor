@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	transition: all 0.2s ease;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none; 
+}
+
+body,html{
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#app{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+	#display{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		p{
+			font-size: 12rem;
+		}
+		#celsius-logo{
+			width:200px;
+			height:200px;
+		}
+
+	}
+
+	#filter{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		input[type="number"]{
+			outline:none;
+			background-color: none;
+			border:none;
+			border-bottom:solid 2px black;
+			padding:5px;
+			margin:10px;
+			width:150px;
+			font-size:30px;
+			text-align: center;
+		}
+
+		::-webkit-input-placeholder {
+  			font-size:15px;
+		}
+	}
+
+	#button{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		input[type="button"]{
+			width:200px;
+			margin:20px 0;
+			border:solid 1px black;
+			background: none;
+			font-size: 1.5rem;
+			padding:10px;
+			outline:none;
+			border-radius: 2px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			
+
+			&:hover{
+				color:white;
+				cursor: pointer;
+				background: black;
+			}
+		}
+	}
+
+	#filterData{
+		display: flex;
+		flex-direction: column;
+
+		p{
+			font-size: 1.5rem;
+			margin:10px 0;
+		}
+	}
+
+	#Notification{
+		
+		#notify{
+			background:#25292C;
+			width:100%;
+			padding:20px 0;
+
+			letter-spacing: 2px;
+			text-align: center;
+			font-size: 1.8rem;
+			font-weight: 300;
+			color:white;
+			
+			&:hover{
+				cursor: pointer;
+			}
+		}
+
+		#enabled,#disabled{
+
+			display:flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding:10px 0;
+
+			background-color: #222222;
+
+			img{
+				width:64px;
+				height:64px;
+				margin:0 5px;
+			}
+
+			p{
+				font-size: 1.8rem;
+				font-weight: 300;
+				color:white;
+				margin:0 5px;
+			}
+		}
+	}
+}
